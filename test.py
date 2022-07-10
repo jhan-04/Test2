@@ -31,6 +31,10 @@ a.index('t') #2
 # 문자열 바꾸기
 a = "Life is too short"
 a.replace("Life", "Your leg") #'Your leg is too short'
+#
+print(eval("1+2"))
+
+
 
 #문자 대문자 소문자
 a = "Hi"
