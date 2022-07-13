@@ -2,16 +2,18 @@
 import sys
 import math
 M,N= map(int,sys.stdin.readline().split())
-list=[i for i in range(M,N+1)]
-no_num=[]
+lis=list(range(M,N+1))
+div=list(range(2,int(math.sqrt(N)+1)))
 num=[]
 i=1
-while i<N:
-    i+=1
-    if i not in no_num:
-        no_num=no_num+[i*k for k in range(1,N//i+1)]
-        if i>=M: num.append(i)
-print(num)
+while len(div):
+    d=div[0]
+    div=[i for i in div if (i%d!=0)]
+    lis=[i for i in lis if (i%d!=0) or (i==d)]
+
+if 1 in lis: del lis[0]
+for n in lis: print(n)
+
 
 
 #런타임에러
