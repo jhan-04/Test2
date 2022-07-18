@@ -1,4 +1,4 @@
-#못품 이진탐색 공부 필요
+
 import sys
 N=sys.stdin.readline()
 lst1=sorted(list(sys.stdin.readline().split()))
@@ -22,8 +22,5 @@ for x in lst2:
         elif lst1[ind]>x: ind_max=ind
         else: ind_min=ind
 
-        
-        
-        
 
 #https://wayhome25.github.io/cs/2017/04/15/cs-16/
